@@ -52,5 +52,27 @@ export function usePageTitle(title: string, description?: string) {
     const ogUrl = document.querySelector('meta[property="og:url"]');
     if (ogUrl) ogUrl.setAttribute('content', absoluteUrl);
 
+    // 7. Update OG & Twitter Image to default preview card
+    const ogImageUrl = `${window.location.origin}/og-preview.jpg`;
+    let ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage) {
+      ogImage.setAttribute('content', ogImageUrl);
+    } else {
+      ogImage = document.createElement('meta');
+      ogImage.setAttribute('property', 'og:image');
+      ogImage.setAttribute('content', ogImageUrl);
+      document.head.appendChild(ogImage);
+    }
+
+    let twitterImage = document.querySelector('meta[name="twitter:image"]');
+    if (twitterImage) {
+      twitterImage.setAttribute('content', ogImageUrl);
+    } else {
+      twitterImage = document.createElement('meta');
+      twitterImage.setAttribute('name', 'twitter:image');
+      twitterImage.setAttribute('content', ogImageUrl);
+      document.head.appendChild(twitterImage);
+    }
+
   }, [title, description, pathname]);
 }
