@@ -10,40 +10,31 @@ const container: React.CSSProperties = {
   padding: '0 clamp(20px, 5vw, 40px)',
 };
 
-const accentLine: React.CSSProperties = {
-  display: 'block',
-  width: '60px',
-  height: '3px',
-  background: 'var(--color-primary)',
-  borderRadius: '2px',
-  margin: '14px auto 0',
-};
-
 const teamMembers = [
   {
     role: 'Ägare & Grundare / VD',
-    name: 'William Ehn',
-    initials: 'W',
-    description: 'Driver WSH Bygg med passion för gediget hantverk, personlig kontakt och trygga helhetslösningar.',
+    name: 'Emil Bäckström',
+    initials: 'E',
+    description: 'Driver Västergårds Bygg AB med passion för genuint snickeri, personlig service och trygga helhetslösningar.',
   },
   {
     role: 'Yrkeshantverkare & Snickare',
     name: 'Marcus Lindqvist',
     initials: 'M',
-    description: 'Mångårig erfarenhet inom stomresning, takbyten, finsnickeri och interiöra renoveringar.',
+    description: 'Mångårig erfarenhet inom stomresning, takarbeten, altanbyggen och interiöra renoveringar.',
   },
   {
-    role: 'Yrkeshantverkare & Grund / Betong',
+    role: 'Yrkeshantverkare & Finsnickare',
     name: 'Anton Berg',
     initials: 'A',
-    description: 'Specialist på grundläggning, formsättning, armering, gjutning och anläggningsarbeten.',
+    description: 'Specialist på inredningssnickeri, köksmontering, fönsterbyten och detaljfinish.',
   },
 ];
 
 export default function About() {
   usePageTitle(
-    'Om WSH Bygg | Vår Historia och Filosofi',
-    'Läs om WSH Bygg. Vi är ditt lokala byggföretag med bas i Alfta som utför grund & gjutning, om- & tillbyggnad, takbyte och renovering i Hälsingland.'
+    'Om Västergårds Bygg AB | Vår Historia & Filosofi',
+    'Läs om Västergårds Bygg AB. Vi är din lokala snickare och byggentreprenör med bas i Örebro län. Kontakta Emil Bäckström för rådgivning!'
   );
   return (
     <main style={{ fontFamily: 'var(--font-family)' }}>
@@ -69,12 +60,12 @@ export default function About() {
                 margin: '0 0 16px 0',
                 lineHeight: 1.15,
               }}>
-                Om WSH Bygg
+                Om Västergårds Bygg AB
               </h1>
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={150}>
               <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', margin: '0 auto', maxWidth: '640px' }}>
-                Ett lokalt och engagerat byggföretag med bas i Alfta och verksamhet i hela Hälsingland.
+                Din personliga snickare och byggfirma med utgångspunkt i Örebro län.
               </p>
             </ScrollReveal>
           </div>
@@ -86,7 +77,7 @@ export default function About() {
         <div style={{ ...container, maxWidth: '960px' }}>
           <div className="about-content-grid" style={{
             display: 'grid',
-            gridTemplateColumns: '200px 1fr',
+            gridTemplateColumns: '240px 1fr',
             gap: '48px',
             alignItems: 'start',
           }}>
@@ -104,7 +95,7 @@ export default function About() {
                   alt={images.about.hero.alt}
                   style={{
                     width: '100%',
-                    maxWidth: '190px',
+                    maxWidth: '230px',
                     height: 'auto',
                     objectFit: 'contain',
                     backgroundColor: 'transparent',
@@ -127,7 +118,7 @@ export default function About() {
                   letterSpacing: '-0.03em',
                   margin: '0 0 20px 0',
                 }}>
-                  Lokalt hantverk med hjärta i Hälsingland
+                  Snickarglädje och gediget hantverk i Örebro län
                 </h2>
               </ScrollReveal>
               <ScrollReveal animation="fade-up" delay={100}>
@@ -139,11 +130,11 @@ export default function About() {
                     margin: '0 0 20px 0',
                     fontWeight: 500,
                   }}>
-                    WSH Bygg grundades 2018 med en tydlig vision: att erbjuda pålitliga, högkvalitativa bygg- och hantverkstjänster med personlig service och ärlig kommunikation. Vi har vår bas i Alfta och är stolta över att hjälpa villaägare, fastighetsägare och företag i Ovanåkers kommun, Edsbyn, Bollnäs och resten av Hälsingland.
+                    Västergårds Bygg AB drivs av Emil Bäckström med en tydlig ambition: att erbjuda pålitliga, högkvalitativa snickeri- och byggnadstjänster med personlig service och rak kommunikation. Med bas i Örebro län hjälper vi villaägare, fastighetsägare och företag i Örebro, Kumla, Hallsberg och omnejd.
                   </p>
                   
                   <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-text-dark)', margin: '28px 0 12px 0' }}>
-                    Kvalitet från grund till färdigt tak
+                    Kvalitet i varje detalj från start till mål
                   </h3>
                   <p style={{
                     color: 'var(--color-gray-600)',
@@ -151,7 +142,7 @@ export default function About() {
                     lineHeight: 1.8,
                     margin: '0 0 16px 0',
                   }}>
-                    Vi erbjuder ett komplett utbud av tjänster inom bygg och entreprenad. Vår expertis sträcker sig från markförberedelser, formsättning och betonggjutning till om- och tillbyggnader, fasadarbeten, golvbjälklag och takbyten.
+                    Vi erbjuder ett komplett utbud av tjänster inom bygg och snickeri. Vår expertis sträcker sig från kundanpassad nybyggnation och tillbyggnader till omfattande husrenoveringar, altaner, takbyten och totalentreprenad.
                   </p>
                   <p style={{
                     color: 'var(--color-gray-600)',
@@ -178,7 +169,7 @@ export default function About() {
                       lineHeight: 1.7,
                       margin: '0 0 10px 0',
                     }}>
-                      "Att bygga och renovera handlar om förtroende. Vi sätter en stolthet i att alltid leverera hållbara resultat och hålla vad vi lovar till våra kunder."
+                      "Att bygga och renovera handlar i grunden om förtroende. Vi sätter en stolthet i att alltid leverera hållbara resultat och hålla vad vi lovar till våra kunder."
                     </p>
                     <span style={{
                       color: 'var(--color-primary)',
@@ -186,7 +177,7 @@ export default function About() {
                       fontSize: '0.9rem',
                       display: 'block',
                     }}>
-                      William Ehn, Ägare och Grundare av WSH Bygg
+                      Emil Bäckström, Ägare & VD för Västergårds Bygg AB
                     </span>
                   </div>
 
@@ -224,7 +215,7 @@ export default function About() {
                 maxWidth: '580px',
                 margin: '0 auto',
               }}>
-                Erfarna och engagerade yrkeshantverkare som levererar kvalitet med bas i Alfta och uppdrag i hela Hälsingland.
+                Erfarna och engagerade yrkessnickare som levererar hantverk med bas i Örebro län.
               </p>
             </ScrollReveal>
           </div>

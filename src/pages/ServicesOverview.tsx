@@ -14,8 +14,8 @@ const container: React.CSSProperties = {
 
 export default function ServicesOverview() {
   usePageTitle(
-    'Våra Tjänster | WSH Bygg Alfta & Hälsingland',
-    'Utforska våra byggtjänster: Grund & gjutning, takbyte, om- och tillbyggnad, renovering och totalentreprenad i Alfta, Edsbyn, Bollnäs och Hälsingland.'
+    'Våra Tjänster | Västergårds Bygg AB Örebro län',
+    'Utforska våra byggtjänster: Nybyggnation, renovering, om- och tillbyggnad samt totalentreprenad i Örebro län. Kontakta oss för fri offert!'
   );
 
   const { hash } = useLocation();
@@ -82,7 +82,7 @@ export default function ServicesOverview() {
               margin: '0 auto',
               lineHeight: 1.65,
             }}>
-              WSH Bygg erbjuder kompletta hantverks- och byggnadstjänster i Alfta, Edsbyn, Bollnäs och hela Hälsingland.
+              Västergårds Bygg AB erbjuder kompletta snickeri- och byggnadstjänster i Örebro, Kumla, Hallsberg och hela Örebro län.
             </p>
           </ScrollReveal>
         </div>

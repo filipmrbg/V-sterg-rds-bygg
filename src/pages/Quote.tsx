@@ -53,8 +53,8 @@ function blurInput(e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | 
 
 export default function Quote() {
   usePageTitle(
-    'Begär offert | WSH Bygg',
-    'Beskriv ditt projekt och begär en kostnadsfri offert för bygg-, gjutnings- eller renoveringsarbeten med Alfta och Hälsingland som bas.'
+    'Begär offert | Västergårds Bygg AB',
+    'Beskriv ditt projekt och begär en kostnadsfri offert för snickeri-, tillbyggnads- eller renoveringsarbeten med Örebro län som bas.'
   );
   const [name, setName]       = useState('');
   const [email, setEmail]     = useState('');

@@ -21,12 +21,12 @@ const faqItems = [
     answer: 'Vi återkopplar vanligtvis inom 24 timmar och lämnar en tydlig, specificerad offert inom 1–3 arbetsdagar efter genomgång eller platsbesök.',
   },
   {
-    question: 'Vilka områden i Hälsingland är ert huvudsakliga upptagningsområde?',
-    answer: 'Vi har vår bas i Alfta och utför regelbundet uppdrag i Ovanåkers kommun, Edsbyn, Bollnäs samt övriga delar av Hälsingland.',
+    question: 'Vilka områden i Örebro län är ert huvudsakliga upptagningsområde?',
+    answer: 'Vi utgår från Örebro län och utför regelbundet uppdrag i Örebro, Kumla, Hallsberg, Karlskoga, Lindesberg samt övriga delar av länet.',
   },
   {
-    question: 'Kan jag boka ett kostnadsfritt platsbesök?',
-    answer: 'Självklart! Kontakta oss via formuläret eller ring 070-652 99 36 så bokar vi in en tid som passar dig.',
+    question: 'Kan vi boka ett kostnadsfritt möte eller platsbesök?',
+    answer: 'Självklart! Har ni något kommande projekt, ta gärna kontakt via formuläret eller ring 070-521 96 00 så bokar vi in ett möte!',
   },
 ];
 
@@ -57,8 +57,8 @@ function blurInput(e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) 
 
 export default function Contact() {
   usePageTitle(
-    'Kontakta WSH Bygg | Offert och Rådgivning',
-    'Kontakta WSH Bygg i Alfta. Vi utför grund & gjutningar, om & tillbyggnader, takbyten och renoveringar i Alfta, Edsbyn, Bollnäs och Hälsingland. Ring 070-652 99 36.'
+    'Kontakta Västergårds Bygg AB | Offert & Rådgivning',
+    'Kontakta Västergårds Bygg AB i Örebro län. Vi utför nybyggnation, renovering, tillbyggnad och totalentreprenad. Ring 070-521 96 00 för rådgivning!'
   );
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -94,7 +94,7 @@ export default function Contact() {
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={150}>
               <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', margin: 0 }}>
-                Vi återkopplar vanligtvis inom 24 timmar. Kostnadsfritt platsbesök ingår alltid.
+                Har ni något kommande byggprojekt? Ta gärna kontakt så bokar vi in ett möte!
               </p>
             </ScrollReveal>
           </div>
@@ -123,7 +123,7 @@ export default function Contact() {
                 Så når du oss
               </h2>
               <p style={{ color: 'var(--color-gray-600)', fontSize: '1rem', lineHeight: 1.8, margin: 0 }}>
-                Du kan nå oss via formuläret, telefon eller e-post. Oavsett om det gäller grund & gjutning, takbyte, om- och tillbyggnad eller nybyggnation hjälper vi dig gärna.
+                Du kan nå oss via formuläret, telefon eller e-post. Oavsett om det gäller nybyggnation, tillbyggnad, renovering eller altanbygge hjälper vi dig gärna.
               </p>
 
               <div style={{ marginTop: '40px', display: 'flex', flexDirection: 'column', gap: '24px' }}>
@@ -146,12 +146,12 @@ export default function Contact() {
                     </p>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
                       <a
-                        href="tel:0706529936"
+                        href="tel:0705219600"
                         style={{ color: 'var(--color-gray-600)', fontSize: '0.95rem', textDecoration: 'none', lineHeight: 1.5, transition: 'color 0.2s ease' }}
                         onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-primary)')}
                         onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-gray-600)')}
                       >
-                        070-652 99 36
+                        070-521 96 00
                       </a>
                     </div>
                   </div>
@@ -172,10 +172,10 @@ export default function Contact() {
                   </div>
                   <div>
                     <p style={{ margin: '0 0 4px 0', fontWeight: 700, fontSize: '0.9rem', color: 'var(--color-text-dark)' }}>
-                      Plats & Område
+                      Område & Verksamhet
                     </p>
                     <p style={{ margin: 0, color: 'var(--color-gray-600)', fontSize: '0.95rem', lineHeight: 1.5 }}>
-                      Bas i Alfta • Ovanåkers kommun, Edsbyn, Bollnäs & hela Hälsingland
+                      Örebro län • Örebro, Kumla, Hallsberg & omnejd
                     </p>
                   </div>
                 </div>
@@ -198,12 +198,12 @@ export default function Contact() {
                       E-post
                     </p>
                     <a
-                      href="mailto:ehn___@hotmail.com"
+                      href="mailto:info@vastergardsbygg.se"
                       style={{ color: 'var(--color-gray-600)', fontSize: '0.95rem', textDecoration: 'none', lineHeight: 1.5, transition: 'color 0.2s ease' }}
                       onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-primary)')}
                       onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-gray-600)')}
                     >
-                      ehn___@hotmail.com
+                      info@vastergardsbygg.se
                     </a>
                   </div>
                 </div>
@@ -258,7 +258,7 @@ export default function Contact() {
                     onBlur={blurInput}
                   />
                   <textarea
-                    placeholder="Beskriv ditt ärende *"
+                    placeholder="Beskriv ditt ärende eller projekt *"
                     value={message}
                     onChange={e => setMessage(e.target.value)}
                     style={{ ...inputStyle, minHeight: '140px', resize: 'vertical', marginBottom: '24px' } as React.CSSProperties}
@@ -310,7 +310,7 @@ export default function Contact() {
             dark={true}
             items={faqItems}
             title="Vanliga frågor"
-            subtitle="Svar på det vi ofta får höra. Hittar du inte svaret är du alltid välkommen att ringa oss!"
+            subtitle="Svar på det vi ofta får höra. Har ni frågor är ni alltid välkomna att kontakta oss!"
             buttonText="Skicka meddelande"
             buttonLink="/kontakt"
           />

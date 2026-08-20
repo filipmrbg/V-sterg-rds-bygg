@@ -1,202 +1,268 @@
-# Antigravity Prompt Library (9-Step Website Onboarding SOP)
+# 🛠️ Antigravity Master Prompt Library (Svenska Hantverkar- & Bygghemsidor)
 
-This is your complete 9-brick Prompt Library and Standard Operating Procedure (SOP) for building client website demos.
+Detta är din officiella **Standard Operating Procedure (SOP)** och **Prompt Library** för att snabbt producera och anpassa högpresterande hemsidor till svenska bygg- och hantverksföretag.
 
-When creating a new demo for a client:
-1. Duplicate the appropriate master template directory (e.g., `0000-MALL-Universell-Industri`) and rename it for the client.
-2. Open the project in Antigravity.
-3. Run the bricks one by one in sequence (Brick 1 to Brick 9), filling in the required client data inside the brackets `[...]`.
+Filen är byggd för att läggas i roten på varje grundmall.
 
 ---
 
-## 🧱 BRICK 1: Company Information
+## ⚡ TVÅ ARBETSSÄTT:
 
-Copy and paste the following into the AI chat:
+| Metod | När den används | Vad den gör |
+| :--- | :--- | :--- |
+| **🚀 Metod A: "All-in-One Mega-Brick"** | När du sätter upp en helt ny kunddemo från en grundmall. | Uppdaterar **hela sajten i ett enda drag** (texter, Allabolag-förädling, logga, favicon, absolut OG-delningsbild för iMessage/SMS, hero, om oss-bild, galleri, 3-mannateam och sociala länkar). |
+| **🧱 Metod B: Modulära Byggstenar (Brick 1–7)** | När du vill göra snabba deländringar eller justera enskilda sektioner. | Steg-för-steg-kontroll över enskilda sektioner. |
+
+---
+
+# 🚀 METOD A: All-in-One Mega-Brick (Snabbstart Demo)
+
+Kopiera hela blocket nedan, klistra in dina uppgifter direkt efter kolonet `:` (luftig layout med gott om utrymme för långa bildlänkar!), klistra in i chatten och tryck Enter:
 
 ```text
-Use this brick to update the company information across the entire website.
+Konfigurera hela webbplatsen för denna kunddemo utifrån uppgifterna nedan.
 
-The information provided here must replace all existing company details in the project, including the company name, location, contact information, and any other references to the business.
+REGLER FÖR AI:
+1. Förädla Allabolag-texten till modern, säljande och förtroendeingivande svensk hantverkscopy utan stelt juridiskt bolagsspråk.
+2. Logotypen ska göras transparent i headern så att den smälter in snyggt utan vit bakgrundsplatta.
+3. FÖRHANDSVISNING / OPEN GRAPH (KRITISKT FÖR IMESSAGE/SMS):
+   - <meta property="og:image"> och <meta name="twitter:image"> i index.html MÅSTE ALLTID ha en fullständig absolut URL (börjar med https://...) – t.ex. den direkta URL:en till logotypen eller https://[Demo-URL]/logo.png. Använd ALDRIG enbart relativa sökvägar som "/logo.png" då sociala medier och iMessage annars visar en tom/svart ruta.
+   - Sätt <meta name="twitter:card" content="summary_large_image" /> samt <link rel="icon"> och <link rel="apple-touch-icon"> till logotypen.
+4. Sätt alltid upp teamet i About.tsx som 3 personer: Ägaren/VD som huvudperson + 2 yrkeshantverkare.
+5. Behåll mallens förinställda tjänstekortsbilder för de 4 rena kärntjänsterna (Nybyggnation, Renovering, Tillbyggnad, Totalentreprenad).
+6. Om Instagram-inlägg lämnas tomma nedan, dölj de 3 embed-korten och visa istället en ren, modern "Följ oss"-banner.
+7. Rensa bort gamla oanvända logotyper och filer ur projektet.
 
-Scan the entire project and ensure that the correct company information is used consistently across all pages and components.
+================ 1. KUNDUPPGIFTER ================
+Företagsnamn: 
 
-Remove any outdated or placeholder company details that may still exist in the template.
+Nisch: 
 
-Company Name:
-JH Huskvalitet AB
+Ort / Område: 
 
-Location / City:
-Uppland
-Phone Number:
-072-210 10 75
+Telefon: 
 
-Email:
-JHHuskvalitet@outlook.com
+E-post: 
+
+Besöksadress: 
+
+Organisationsnummer: 
+
+Ägare / VD: 
+
+Slogan (valfritt): 
+
+Demo / Vercel URL (valfritt): 
+
+
+================ 2. ALLABOLAG / RÅTEXT ================
+[Klistra in råtext här]
+
+
+================ 3. LOGO & MEDIA ================
+Logotyp URL: 
+
+Hero Video/Bild URL: 
+
+Om Oss Bild URL: 
+
+
+================ 4. BILDGALLERI (4-6 BILDER) ================
+Galleri Bild 1 URL: 
+
+Galleri Bild 2 URL: 
+
+Galleri Bild 3 URL: 
+
+Galleri Bild 4 URL: 
+
+Galleri Bild 5 URL (valfritt): 
+
+Galleri Bild 6 URL (valfritt): 
+
+
+================ 5. SOCIALA MEDIER & INSTAGRAM ================
+Instagram Profil URL: 
+
+Facebook Sida URL: 
+
+Instagram Inlägg 1 URL: 
+
+Instagram Inlägg 2 URL: 
+
+Instagram Inlägg 3 URL: 
+```
+
+---
+
+# 🧱 METOD B: Modulära Byggstenar (Brick 1–7)
+
+Använd dessa när du vill göra specifika deluppdateringar:
+
+---
+
+### 🧱 BRICK 1: Företagsinformation & Allabolag-Text
+```text
+Uppdatera företagsinformationen och texterna över hela webbplatsen. Förädla råtexten till modern hantverkssvenska.
+
+Företagsnamn: 
+Ort / Område: 
+Telefon: 
+E-post: 
+Besöksadress: 
+Ägare / VD: 
+Slogan (valfritt): 
+
+Allabolag / Råtext:
 
 ```
 
 ---
 
-## 🧱 BRICK 2: Logo Update
-
-Copy and paste the following into the AI chat:
-
+### 🧱 BRICK 2: Logotyp, Favicon & Absolut Förhandsvisningsbild
 ```text
-Use this brick to update the logo across the entire website.
-The logo provided here must replace all existing logos in the project, including:
-- Navbar / Header
-- About section
-- Footer
-- Any other component where the logo appears
+Uppdatera logotypen på hela webbplatsen:
+1. Ersätt logotypen i Navbar (transparent utan vit kant), Footer och Om oss.
+2. Uppdatera <link rel="icon"> och <link rel="apple-touch-icon"> i index.html.
+3. Uppdatera <meta property="og:image"> och <meta name="twitter:image"> i index.html med FULLSTÄNDIG ABSOLUT URL (https://...) så att förhandsvisningsbilden i iMessage/SMS/sociala medier fungerar felfritt.
+4. Rensa bort gamla logotypfiler ur projektet.
 
-Important rules:
-1. In the About section, only replace the logo image source — keep the existing size, spacing, and layout from the template.
-2. The About section must use the exact same logo image as the Navbar / Header.
-3. Search the entire codebase for old logo images or logo URLs that are no longer used and remove those unused logo assets from the project completely.
-4. The logo must also be used as the default preview image when the website is shared on social media platforms (OG image).
-
-Logo Image URL:
-https://scontent.fmmx3-1.fna.fbcdn.net/v/t39.30808-6/634476989_122107636611240431_2908585992468745978_n.jpg?stp=dst-jpg_tt6&cstp=mx1024x1024&ctp=s1024x1024&_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jqufOUVujasQ7kNvwGZ7uxs&_nc_oc=Adougzd4pxtPxUXdNW9ojqHbrmRBfbUBLxOyOycMNzEKh-WbeFthFn0ekuK2sCd11h4&_nc_zt=23&_nc_ht=scontent.fmmx3-1.fna&_nc_gid=FRSnwH-lvQUP6zF9nKN0Gg&_nc_ss=7b2a8&oh=00_AQHTbpeMWbLaqQ0OVOjKfezJDLPpSy6vScEORZNaNIWkWw&oe=6A84DCDB
+Logotyp URL: 
+Demo / Vercel URL (valfritt): 
 ```
 
 ---
 
-## 🧱 BRICK 3: Social Media Links
-
-Copy and paste the following into the AI chat:
-
+### 🧱 BRICK 3: Hero Media (Video eller Bakgrundsbild)
 ```text
-Use this brick to update the company’s social media links.
-Each link provided here must replace the existing social media links wherever they appear on the website (e.g., Header, Footer, Contact section).
+Byt ut bakgrundsmediat i Hero-sektionen på startsidan. Behåll layout, overlay och läsbarhet intakt.
 
-Instagram:
-https://www.instagram.com/jhhuskvalitetab
-
-Facebook: https://www.facebook.com/profile.php?id=61587212942833#
+Hero Media URL: 
 ```
 
 ---
 
-## 🧱 BRICK 4: About Section & Main Service Description
-
-Copy and paste the following into the AI chat:
-
+### 🧱 BRICK 4: De 4 Kärntjänsterna (Korta & Rena Rubriker)
 ```text
-Use this brick to update the About section and the main service description on the website.
-Replace the existing text content in this section with the text provided below. Do not modify the layout, spacing, styling, or component structure.
+Uppdatera tjänsteutbudet i src/data/services.ts och på startsidan till följande 4 rena kärntjänster:
 
-The section should present the company using both images/visuals and text. The visuals should support the written content while keeping the existing layout and design of the template intact.
-The text should describe the company, what it does, and the main services it provides.
-Only update the text content.
+1. Nybyggnation
+- Kort text: Kundanpassade lösvirkeshus, fritidshus, attefallshus och garage från grund till nyckelfärdigt hem.
+- Slug: nybyggnation
 
-About & Services Text:
-JH Huskvalitet AB erbjuder byggtjänster med fokus på kvalitet, noggrannhet och hållbara lösningar. Vi hjälper dig från idé till färdigt resultat med trygghet, struktur och yrkesstolthet i varje steg.
+2. Renovering
+- Kort text: Omfattande renoveringar av hus, lägenheter, kök och badrum som höjer standarden och trivseln.
+- Slug: renovering
+
+3. Tillbyggnad
+- Kort text: Utöka boytan med harmoniska utbyggnader, vinkelutbyggnader och taklyft.
+- Slug: tillbyggnad
+
+4. Totalentreprenad
+- Kort text: En enda kontaktperson och ett samlat ansvar från idé och ritning till nyckelfärdigt och besiktigat resultat.
+- Slug: totalentreprenad
 ```
 
 ---
 
-## 🧱 BRICK 5: Projects & Portfolio Section
-
-Copy and paste the following into the AI chat:
-
+### 🧱 BRICK 5: "Om Oss"-Bild & Team-sektion (Fast 3-mannateam)
 ```text
-Use this brick to update the Projects section only.
+Uppdatera Om oss-bilden och konfigurera teamet till ett stilrent 3-mannateam (ägaren + 2 anställda).
 
-Each Image/Video URL must replace the existing project media in that section — and nowhere else.
+Om Oss Bild URL (firmabil / snickare / eller skriv "logga"): 
 
-Do not generate or insert any text descriptions for the projects unless explicitly requested. The section should display high-quality media.
+Ägare / VD Namn: 
 
-Fill in the three project entries below:
+Anställd 1 (valfritt): 
 
-Project 1 Image/Video URL:
-[ENTER IMAGE/VIDEO URL HERE]
-
-Project 2 Image/Video URL:
-[ENTER IMAGE/VIDEO URL HERE]
-
-Project 3 Image/Video URL:
-[ENTER IMAGE/VIDEO URL HERE]
+Anställd 2 (valfritt): 
 ```
 
 ---
 
-## 🧱 BRICK 6: Hero Section Background Media
-
-Copy and paste the following into the AI chat:
-
+### 🧱 BRICK 6: Bildgalleri / Våra Arbeten (Luftig Layout)
 ```text
-Use this brick to update the Hero section background image or video.
+Uppdatera bildgalleriet "Våra Arbeten" med följande bildlänkar:
 
-The media provided here must replace the current background used in the Hero section. Do not modify the Hero layout, overlay, text positioning, spacing, or styling.
+Galleri Bild 1 URL: 
 
-Only replace the background media source while keeping the existing structure of the template intact.
-Ensure the image/video is responsive and scales properly across desktop, tablet, and mobile devices.
+Galleri Bild 2 URL: 
 
-Hero Background Image/Video URL:
-https://d8j0ntlcm91z4.cloudfront.net/user_3G5LlmMYORSdAk8SxzXrK2S0Is5/hf_20260816_182956_5f9788b4-1956-469f-bd36-25622b10a0ef.mp4
+Galleri Bild 3 URL: 
+
+Galleri Bild 4 URL: 
+
+Galleri Bild 5 URL: 
+
+Galleri Bild 6 URL: 
 ```
 
 ---
 
-## 🧱 BRICK 7: Customer Reviews Generator
-
-Copy and paste the following into the AI chat:
-
+### 🧱 BRICK 7: Sociala Medier & Instagram-banner
 ```text
-Use this brick to replace the existing reviews on the website.
+Uppdatera länkarna till sociala medier. Om inläggslänkar lämnas tomma, visa en ren Följ-banner.
 
-Replace the current reviews by generating exactly 3 new customer reviews.
-The new reviews should naturally fit the current company based on its name, location, and services. The system should determine what details are appropriate to include.
+Instagram Profil: 
 
-Each time this prompt is used:
-- The existing reviews must be fully replaced.
-- The new reviews must be original and tailored to the business.
-- Reviewer names must be realistic and localized to the company's operating area.
-- Wording and tone should vary naturally.
-- Reviews should sound human, believable, and authentic (avoid generic marketing jargon).
-- The three reviews should have slightly different lengths (varying character counts) while maintaining visually balanced cards.
+Facebook Sida: 
 
-The result must be placed directly into the website’s reviews/testimonials section, replacing old content entirely.
+Instagram Inlägg 1: 
+
+Instagram Inlägg 2: 
+
+Instagram Inlägg 3: 
 ```
 
 ---
 
-## 🧱 BRICK 8: Cleanup Unused Assets & Template Content
-
-Copy and paste the following into the AI chat:
-
-```text
-Use this brick to clean up unused assets and leftover template content across the entire project.
-
-Scan the entire codebase and identify any images, videos, logos, icons, or other media files that are no longer used anywhere in the website. Remove these unused assets completely from the project (e.g., from public/ or src/assets/).
-
-Also search for and remove any leftover template content, placeholder text, demo images, unused components, or unused imports that are no longer referenced in the code.
-
-Ensure that only assets currently used in the website remain in the project.
-Do not remove any files that are actively referenced by the website.
-
-The goal is to keep the project clean, lightweight, and free from unused template assets before final SEO and metadata checks are performed.
-```
+# 📚 NISCH-KATALOG (Certifikat & Data per Bransch)
 
 ---
 
-## 🧱 BRICK 9: SEO & Metadata Verification
+### 🔨 1. Byggföretag / Snickare & Totalentreprenad
+- **Tjänster:** Nybyggnation | Renovering | Tillbyggnad | Totalentreprenad
+- **Certifikat & Tryggheter:** Medlem i Byggföretagen, ID06 Legitimerad Personal, Bas-P & Bas-U Certifiering, Byggfelsförsäkring & Färdigställandeförsäkring, Fast pris enligt Hantverkarformuläret 12 / ABS 18, Fullt ROT-avdrag (30%).
+- **Offertval:** Nybyggnation, Tillbyggnad / Utbyggnad, Totalrenovering, Kök & Badrum, Altan / Uterum, Totalentreprenad, Övrigt snickeri.
 
-Copy and paste the following into the AI chat:
+---
 
-```text
-Ensure that the website displays correct and consistent company information everywhere, especially for SEO and social link previews.
+### 🚜 2. Markfirma / Markentreprenad & Dränering
+- **Tjänster:** Dränering | Schaktning | Stensättning | Husgrunder | Enskilt Avlopp
+- **Certifikat & Tryggheter:** Diplomerad Fukt- & Dräneringsentreprenör (Isodrän / Pordrän), Maskinförarbevis, ID06, Bas-P/U, 10 års funktionsgaranti på dränering, Ansvarsförsäkring 10 MSEK.
+- **Offertval:** Husdränering, Schaktning & Tomtplanering, Stensättning & Stödmurar, Husgrund / Betongplatta, Enskilt Avlopp / VA, Poolgrävning.
 
-Scan the entire project and identify all sources of metadata and structured data, including:
-- <title> and meta description in index.html
-- Open Graph tags (og:title, og:description, og:site_name, og:url, og:image)
-- Twitter Card tags
-- JSON-LD (Organization / LocalBusiness schema)
-- Manifests or config files that inject metadata
+---
 
-Remove all outdated, duplicated, or conflicting company information and ensure that only the current, correct company name and location are used consistently across all metadata.
+### 🚰 3. Rörmokare & VVS-Företag
+- **Tjänster:** Värmepumpar | Badrums-VVS | Köksinstallation | Stambyte | Fastighetsservice
+- **Certifikat & Tryggheter:** Auktoriserat VVS-företag (Säker Vatten), Certifierad Värmepumpsinstallatör (SKVP), Heta Arbeten, Säker Vatten-intyg lämnas alltid, Full ansvarsförsäkring för vattenskador.
+- **Offertval:** Värmepump / Värmesystem, Badrumsrenovering & VVS, Köksinstallation & Rördragning, Stambyte / Rörbyte, Vattenburen golvvärme, Fastighetsservice / Serviceavtal.
 
-Use the information provided in the previous bricks to populate all metadata fields and ensure consistency across the entire project.
+---
 
-Use absolute URLs where required, ensure all required meta tags are present, and confirm that SEO results and social link previews display the correct company information.
-```
+### ⚡ 4. Elektriker & Elinstallation
+- **Tjänster:** Laddboxar | Solceller | Centralbyte | Smarta Hem (Plejd) | Nyinstallation
+- **Certifikat & Tryggheter:** Registrerat hos Elsäkerhetsverket, Auktoriserad Elinstallatör (AL), Medlem i Installatörsföretagen (IN), Certifierad Plejd- och laddboxmontör, 50% Grönt Avdrag direkt på fakturan.
+- **Offertval:** Laddbox & Elbilsladdning, Solceller & Batterilagring, Byte av Elcentral / Proppskåp, Belysning & Plejd, Elinstallation vid Renovering/Nybygge, Felsökning & Elbesiktning.
+
+---
+
+### 🏠 5. Takläggare & Takentreprenad
+- **Tjänster:** Takbyte Tegel & Betong | Papptak | Plåttak | Taktvätt & Målning | Taksäkerhet
+- **Certifikat & Tryggheter:** Medlem i TIB (Takentreprenörerna), Certifierad Tätskiktsgarantier Norden (Upp till 15 års ansvarsgaranti), Heta Arbeten, Fallskyddscertifierad personal, Bas-P/U.
+- **Offertval:** Takbyte (Tegel / Betongpannor), Papptak / Tätskikt, Plåttak / Bandtäckning, Taktvätt & Behandling, Takavvattning (Hängrännor), Taksäkerhet & Takstegar.
+
+---
+
+### 🎨 6. Måleri & Fasadmåleri
+- **Tjänster:** Invändigt Måleri | Fasadmålning | Tapetsering | Fönsterrenovering | Våtrum
+- **Certifikat & Tryggheter:** Medlem i Måleriföretagen i Sverige, MVK (Måleribranschens Våtrumskontroll), Miljöcertifierade färgsystem, Nöjd Kund-Garanti med slutbesiktning.
+- **Offertval:** Invändig Målning & Spackling, Fasadmålning & Träskydd, Tapetsering, Fönstermålning, Våtrumsmålning, Snickerimålning.
+
+---
+
+### 🛁 7. Badrum & Plattsättning
+- **Tjänster:** Total Badrumsrenovering | Kakel & Klinker | Microcement | Flytspackling | Golvvärme
+- **Certifikat & Tryggheter:** Behörig Våtrum enligt BKR (Byggkeramikrådet), GVK Våtrumskontroll, Säker Vatten-samverkan, BKR Kvalitetsdokument & Tätskiktsgaranti lämnas alltid.
+- **Offertval:** Total Badrumsrenovering, Plattsättning Kakel & Klinker, Microcement / Fogfria ytor, Golvvärme & Flytspackling, Spa / Relaxavdelning.

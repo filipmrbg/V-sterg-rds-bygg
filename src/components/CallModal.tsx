@@ -10,10 +10,10 @@ export default function CallModal({ isOpen, onClose }: CallModalProps) {
 
   const contacts = [
     {
-      name: 'WSH Bygg',
-      role: 'William Ehn',
-      phone: '070-652 99 36',
-      tel: 'tel:0706529936',
+      name: 'Västergårds Bygg AB',
+      role: 'Emil Bäckström, Ägare & VD',
+      phone: '070-521 96 00',
+      tel: 'tel:0705219600',
     },
   ];
 
@@ -103,7 +103,7 @@ export default function CallModal({ isOpen, onClose }: CallModalProps) {
               fontFamily: 'var(--font-family)',
             }}
           >
-            Ring WSH Bygg
+            Ring Västergårds Bygg AB
           </h2>
           <p style={{ fontSize: '0.9rem', color: '#64748b', margin: 0, lineHeight: 1.5 }}>
             Kontakta oss direkt för rådgivning, frågor och kostnadsfri kalkyl.
@@ -179,7 +179,7 @@ export default function CallModal({ isOpen, onClose }: CallModalProps) {
                   gap: '6px',
                   padding: '8px 14px',
                   background: 'var(--color-primary)',
-                  color: '#1a1f2e',
+                  color: '#ffffff',
                   borderRadius: '10px',
                   fontWeight: 700,
                   fontSize: '0.85rem',

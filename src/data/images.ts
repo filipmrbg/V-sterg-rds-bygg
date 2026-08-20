@@ -2,20 +2,7 @@
  * CENTRALIZED IMAGE CONFIGURATION
  *
  * All images used across the template are defined here.
- * To customize for a new company: replace the URLs below.
- *
- * Recommended dimensions per slot:
- *   hero.background       — 1400×800+ (wide, dark works best with overlay text)
- *   services.*            — 900×600 (landscape, subject-focused)
- *   gallery[]             — 800×800 (square crop)
- *   cta.banner            — 600×420 (portrait/square, shown in right column)
- *   cta.midSection        — 1400×600 (wide, used as background with dark overlay)
- *   about.hero            — 600×750 (portrait, team or company)
- *   about.teamMember      — 300×300 (square, headshot)
- *   whyChooseUs           — 600×auto (portrait or landscape, detail shot)
- *   ideaToResult          — 600×auto (landscape, process/progress shot)
- *   portfolio[]           — 800×600 (landscape, finished project photos)
- *   servicePages.*        — see individual slots below
+ * Customized for Västergårds Bygg AB (Örebro län).
  */
 
 export interface ImageSlot {
@@ -75,36 +62,36 @@ export interface SiteImages {
 const images: SiteImages = {
   logo: {
     url: '/logo-white.png',
-    alt: 'WSH Bygg',
+    alt: 'Västergårds Bygg AB',
   },
   logoDark: {
     url: '/logo-dark.png',
-    alt: 'WSH Bygg',
+    alt: 'Västergårds Bygg AB',
   },
 
   hero: {
     background: {
       url: '/hero-main.webp',
-      alt: 'WSH Bygg hantverk och byggentreprenad',
+      alt: 'Västergårds Bygg AB hantverk och snickeri i Örebro län',
     },
   },
 
   services: {
     nybyggnation: {
       url: '/service-smahusbyggnation.webp',
-      alt: 'Nybyggnation av villor och fritidshus i Hälsingland',
+      alt: 'Nybyggnation av villor och fritidshus i Örebro län',
     },
     smahusbyggnation: {
       url: '/service-smahusbyggnation.webp',
-      alt: 'Nybyggnation av villor och fritidshus i Hälsingland',
+      alt: 'Nybyggnation och lösvirkeshus i Örebro län',
     },
     renovering: {
       url: '/service-renovering.webp',
-      alt: 'Renovering och hantverk i Alfta och Bollnäs',
+      alt: 'Renovering och hantverk i Örebro och omnejd',
     },
     ombyggnation: {
       url: '/service-ombyggnation.webp',
-      alt: 'Ombyggnation, takbyte och tillbyggnad i Ovanåker',
+      alt: 'Ombyggnation, takbyten och tillbyggnad i Örebro',
     },
     totalentreprenad: {
       url: '/service-totalentreprenad.webp',
@@ -113,28 +100,29 @@ const images: SiteImages = {
   },
 
   gallery: [
-    { url: '/gallery-wsh-1.webp', alt: 'WSH Bygg golvrenovering och bjälklagsisolering' },
-    { url: '/gallery-wsh-2.webp', alt: 'WSH Bygg grundarbete och makadamläggning' },
-    { url: '/gallery-wsh-3.webp', alt: 'WSH Bygg altan och källarentré på klassisk villa' },
-    { url: '/gallery-wsh-4.webp', alt: 'WSH Bygg armering och formsättning för gjutning' },
-    { url: '/gallery-wsh-5.webp', alt: 'WSH Bygg nybyggt attefallshus med glaspartier' },
+    { url: '/gallery-vb-1.webp', alt: 'Västergårds Bygg AB snickeri och byggprojekt' },
+    { url: '/gallery-vb-2.webp', alt: 'Västergårds Bygg AB renovering och tillbyggnad' },
+    { url: '/gallery-vb-3.webp', alt: 'Västergårds Bygg AB stomresning och träkonstruktion' },
+    { url: '/gallery-vb-4.webp', alt: 'Västergårds Bygg AB altanbygge och uterum' },
+    { url: '/gallery-vb-5.webp', alt: 'Västergårds Bygg AB takarbete och fasad' },
+    { url: '/gallery-vb-6.webp', alt: 'Västergårds Bygg AB inredningssnickeri och finish' },
   ],
 
   cta: {
     banner: {
       url: '/hero-main.webp',
-      alt: 'WSH Bygg projekt',
+      alt: 'Västergårds Bygg AB projekt',
     },
     midSection: {
       url: '/hero-main.webp',
-      alt: 'Byggarbetsplats',
+      alt: 'Byggarbetsplats i Örebro',
     },
   },
 
   about: {
     hero: {
       url: '/logo-dark.png',
-      alt: 'WSH Bygg logotyp',
+      alt: 'Västergårds Bygg AB logotyp',
     },
     teamMember: {
       url: '/logo-white.png',
@@ -154,29 +142,34 @@ const images: SiteImages = {
 
   portfolio: [
     {
-      image: { url: '/gallery-wsh-1.webp', alt: 'WSH Bygg golvrenovering' },
-      title: 'Golvbjälklag & Renovering',
-      category: 'Renovering',
+      image: { url: '/gallery-vb-1.webp', alt: 'Västergårds Bygg AB nybyggnad och snickeri' },
+      title: 'Nybyggnation & Träkonstruktion',
+      category: 'Nybyggnation',
     },
     {
-      image: { url: '/gallery-wsh-2.webp', alt: 'WSH Bygg grundarbete' },
-      title: 'Grund & Markarbete',
-      category: 'Grundarbete',
-    },
-    {
-      image: { url: '/gallery-wsh-3.webp', alt: 'WSH Bygg altan och entré' },
-      title: 'Altan & Källarentré',
+      image: { url: '/gallery-vb-2.webp', alt: 'Västergårds Bygg AB ombyggnad' },
+      title: 'Om- & Tillbyggnad',
       category: 'Tillbyggnad',
     },
     {
-      image: { url: '/gallery-wsh-4.webp', alt: 'WSH Bygg gjutning och armering' },
-      title: 'Betonggjutning & Formning',
-      category: 'Gjutning',
+      image: { url: '/gallery-vb-3.webp', alt: 'Västergårds Bygg AB stomresning' },
+      title: 'Stomresning & Fasad',
+      category: 'Entreprenad',
     },
     {
-      image: { url: '/gallery-wsh-5.webp', alt: 'WSH Bygg attefallshus' },
-      title: 'Nybyggt Attefallshus',
-      category: 'Nybyggnation',
+      image: { url: '/gallery-vb-4.webp', alt: 'Västergårds Bygg AB altan och trädäck' },
+      title: 'Altan & Uterum',
+      category: 'Tillbyggnad',
+    },
+    {
+      image: { url: '/gallery-vb-5.webp', alt: 'Västergårds Bygg AB tak och fasadrenovering' },
+      title: 'Tak & Fasadrenovering',
+      category: 'Renovering',
+    },
+    {
+      image: { url: '/gallery-vb-6.webp', alt: 'Västergårds Bygg AB interiör och finsnickeri' },
+      title: 'Interiör & Finsnickeri',
+      category: 'Renovering',
     },
   ],
 

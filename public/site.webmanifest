@@ -1,7 +1,7 @@
 {
-  "name": "WSH Bygg",
-  "short_name": "WSH Bygg",
-  "description": "Professionellt lokalt byggföretag med bas i Alfta. Vi utför tjänster inom grund & gjutningar, om & tillbyggnader, takbyten och totalentreprenad i Ovanåkers kommun, Edsbyn, Bollnäs och Hälsingland.",
+  "name": "Västergårds Bygg AB",
+  "short_name": "Västergårds Bygg",
+  "description": "Professionell snickare och byggentreprenör med utgångspunkt i Örebro län. Vi utför nybyggnation, renovering, tillbyggnad och totalentreprenad.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -9,7 +9,7 @@
   "icons": [
     {
       "src": "/logo.png",
-      "sizes": "1024x1024",
+      "sizes": "960x960",
       "type": "image/png"
     }
   ]

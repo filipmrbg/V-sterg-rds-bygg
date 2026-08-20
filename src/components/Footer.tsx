@@ -5,13 +5,13 @@ import images from '../data/images';
 const serviceLinks = [
   { label: 'Nybyggnation', href: '/tjanster#nybyggnation' },
   { label: 'Renovering', href: '/tjanster#renovering' },
-  { label: 'Ombyggnation', href: '/tjanster#ombyggnation' },
+  { label: 'Om- & Tillbyggnad', href: '/tjanster#ombyggnation' },
   { label: 'Totalentreprenad', href: '/tjanster#totalentreprenad' },
 ];
 
 const socialIcons = [
-  { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/wsh.bygg/' },
-  { Icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61550844801002' },
+  { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/vastergardsbyggab' },
+  { Icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/vastergardsbyggab/' },
 ];
 
 export default function Footer() {
@@ -46,7 +46,8 @@ export default function Footer() {
                     src={images.logoDark?.url || '/logo-dark.png'}
                     alt={images.logoDark?.alt || images.logo.alt}
                     style={{
-                      height: '75px',
+                      height: '64px',
+                      maxWidth: '260px',
                       width: 'auto',
                       display: 'block',
                       objectFit: 'contain',
@@ -56,7 +57,7 @@ export default function Footer() {
               </Link>
             </div>
             <p style={{ color: 'var(--color-gray-600)', fontSize: '0.9rem', lineHeight: 1.7, margin: '0 0 20px 0' }}>
-              Lokalt byggföretag med bas i Alfta. Vi utför tjänster inom grund & gjutningar, om- & tillbyggnader, takbyten och renovering i Ovanåkers kommun, Edsbyn, Bollnäs och hela Hälsingland.
+              Västergårds Bygg AB – din pålitliga snickare och byggfirma med utgångspunkt i Örebro län. Vi utför nybyggnation, renovering, tillbyggnad och totalentreprenad med högsta yrkesstolthet.
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
               {socialIcons.map(({ Icon, label, href }) => (
@@ -129,23 +130,23 @@ export default function Footer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.95rem' }}>
 
               <a
-                href="mailto:ehn___@hotmail.com"
+                href="mailto:info@vastergardsbygg.se"
                 className="footer-contact-item"
               >
                 <div className="footer-contact-icon">
                   <Mail size={16} strokeWidth={2} />
                 </div>
-                <span>ehn___@hotmail.com</span>
+                <span>info@vastergardsbygg.se</span>
               </a>
 
               <a
-                href="tel:0706529936"
+                href="tel:0705219600"
                 className="footer-contact-item"
               >
                 <div className="footer-contact-icon">
                   <Phone size={16} strokeWidth={2} />
                 </div>
-                <span>070-652 99 36</span>
+                <span>070-521 96 00</span>
               </a>
 
               <div
@@ -154,7 +155,7 @@ export default function Footer() {
                 <div className="footer-contact-icon">
                   <MapPin size={16} strokeWidth={2} />
                 </div>
-                <span>Alfta • Edsbyn • Bollnäs • Hälsingland</span>
+                <span>Örebro län • Örebro • Kumla • Hallsberg</span>
               </div>
             </div>
           </div>
@@ -176,7 +177,9 @@ export default function Footer() {
           }}
         >
           <div style={{ display: 'flex', gap: '12px', alignItems: 'center', color: 'var(--color-gray-600)', fontSize: '0.875rem', flexWrap: 'wrap' }}>
-            <span>© 2026 - WSH Bygg</span>
+            <span>© 2026 - Västergårds Bygg AB</span>
+            <span>•</span>
+            <span>Org.nr: 559449-7058</span>
           </div>
         </div>
       </div>
@@ -233,7 +236,6 @@ export default function Footer() {
           .footer-contact-item:hover, .footer-google-link:hover {
             transform: none;
           }
-
         }
       `}</style>
     </footer>

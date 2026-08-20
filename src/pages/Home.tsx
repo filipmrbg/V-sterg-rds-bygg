@@ -50,8 +50,8 @@ const homeFaqItems = [
 
 export default function Home() {
   usePageTitle(
-    'WSH Bygg | Din byggfirma i Alfta, Edsbyn, Bollnäs & Hälsingland',
-    'WSH Bygg i Alfta utför nybyggnation, renovering, tillbyggnad, gjutning, grundarbete och takbyten i Ovanåkers kommun, Edsbyn, Bollnäs och hela Hälsingland. Kontakta oss för fri offert!'
+    'Västergårds Bygg AB | Snickare & Byggfirma i Örebro län',
+    'Västergårds Bygg AB – din snickare och byggentreprenör i Örebro län. Vi utför nybyggnation, renovering, tillbyggnad och totalentreprenad. Kontakta Emil Bäckström för fri offert!'
   );
 
   const heroBgRef = useRef<HTMLDivElement>(null);
@@ -183,16 +183,16 @@ export default function Home() {
             {/* Top Location Line */}
             <ScrollReveal animation="fade-down" delay={0} duration={0.6}>
               <span style={{
-                fontFamily: "'Outfit', sans-serif",
-                letterSpacing: '0.24em',
+                fontFamily: "'Barlow Condensed', sans-serif",
                 textTransform: 'uppercase',
-                fontSize: 'clamp(0.7rem, 1.2vw, 0.82rem)',
+                letterSpacing: '0.22em',
+                fontSize: 'clamp(0.85rem, 1.4vw, 1.05rem)',
                 fontWeight: 700,
                 color: 'rgba(255, 255, 255, 0.92)',
                 display: 'block',
                 marginBottom: '14px',
               }}>
-                ALFTA • EDSBYN • BOLLNÄS • HÄLSINGLAND
+                ÖREBRO • KUMLA • HALLSBERG • ÖREBRO LÄN
               </span>
             </ScrollReveal>
 
@@ -209,7 +209,7 @@ export default function Home() {
                 margin: '0 0 24px 0',
                 textShadow: '0 4px 18px rgba(0, 0, 0, 0.75)',
               }}>
-                WSH<br />BYGG
+                VÄSTERGÅRDS<br />BYGG
               </h1>
             </ScrollReveal>
 
@@ -225,7 +225,7 @@ export default function Home() {
                 textShadow: '0 2px 12px rgba(0, 0, 0, 0.85)',
                 fontWeight: 400,
               }}>
-                Din lokala byggfirma med bas i Alfta. Vi utför tjänster inom grund & gjutningar, om- & tillbyggnader, takbyten och nybyggnation med högsta precision och yrkesstolthet.
+                Din lokala snickare och byggpartner med utgångspunkt i Örebro län. Vi utför nybyggnation, om- & tillbyggnad, renovering och altanbyggen med högsta precision och yrkesstolthet.
               </p>
             </ScrollReveal>
 
@@ -244,7 +244,7 @@ export default function Home() {
                 <Button
                   variant="outline"
                   size="lg"
-                  href="tel:0706529936"
+                  href="tel:0705219600"
                   onClick={(e) => {
                     if (window.innerWidth > 768) {
                       e.preventDefault();
@@ -254,7 +254,7 @@ export default function Home() {
                 >
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
                     <Phone size={18} />
-                    Ring 070-652 99 36
+                    Ring 070-521 96 00
                   </span>
                 </Button>
               </div>
@@ -322,7 +322,7 @@ export default function Home() {
                   lineHeight: 1.65,
                   margin: '0 0 12px 0',
                 }}>
-                  Från grund & gjutning till renovering, tillbyggnad och takbyte i Alfta, Edsbyn, Bollnäs och hela Hälsingland.
+                  Från nybyggnation och tillbyggnad till varsam renovering och finsnickeri i Örebro län.
                 </p>
                 <Link
                   to="/tjanster"
@@ -482,10 +482,11 @@ export default function Home() {
               }}>
                 <img
                   src="/logo-dark.png"
-                  alt="WSH Bygg Logotyp"
+                  alt="Västergårds Bygg AB Logotyp"
                   style={{
                     width: '100%',
-                    height: '100%',
+                    maxWidth: '320px',
+                    height: 'auto',
                     objectFit: 'contain',
                     display: 'block',
                     filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.08))',
@@ -504,7 +505,7 @@ export default function Home() {
                   lineHeight: 1.2,
                   margin: '0 0 14px 0',
                 }}>
-                  Din lokala byggfirma i Hälsingland
+                  Din lokala snickare i Örebro län
                 </h2>
               </ScrollReveal>
               <ScrollReveal animation="scale-x-left" delay={200} duration={0.6}>
@@ -517,16 +518,16 @@ export default function Home() {
                   lineHeight: 1.75,
                   margin: '0 0 32px 0',
                 }}>
-                  Bakom WSH Bygg står William Ehn med ett skickligt hantverksteam. Med bas i Alfta erbjuder vi gedigna bygg- och entreprenadtjänster i Ovanåkers kommun, Edsbyn, Bollnäs och hela Hälsingland. Vi tror på rak dialog, personlig kontakt och ett noggrant hantverk utan genvägar – från grund och gjutning till färdigt tak.
+                  Bakom Västergårds Bygg AB står Emil Bäckström med ett erfaret och engagerat snickeriteam. Med bas i Örebro län erbjuder vi gedigna bygg- och renoveringstjänster i Örebro, Kumla, Hallsberg och omnejd. Vi tror på rak dialog, personlig kontakt och ett noggrant hantverk utan genvägar. Har ni något kommande projekt, ta gärna kontakt så bokar vi in ett möte!
                 </p>
               </ScrollReveal>
               <ScrollReveal animation="fade-right" duration={0.8} delay={200}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                   {[
-                    'En och samma kontaktperson från start till mål',
-                    'Tydliga offerter, fasta priser och direkt ROT-avdrag',
-                    'Specialister på grundläggning, gjutning och träbyggnation',
-                    'Lokal närvaro och snabb service i hela Hälsingland',
+                    'En och samma kontaktperson från idé till färdigt bygge',
+                    'Tydliga offerter, fasta priser och direkt ROT-avdrag (30%)',
+                    'Specialister på träkonstruktion, tillbyggnad och finsnickeri',
+                    'Lokal närvaro och personlig service i hela Örebro län',
                   ].map((item, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                       <CheckCircle2 size={24} color="var(--color-primary)" style={{ flexShrink: 0 }} />
@@ -795,31 +796,31 @@ export default function Home() {
           <div className="reviews-grid">
             {[
               {
-                name: 'Per-Erik Jonsson',
-                location: 'Alfta',
-                text: 'Vi anlitade WSH Bygg för gjutning av betongplatta och stomresning till vårt nya garage. Otroligt proffsigt bemötande från William och gänget. Arbetet flöt på helt enligt tidsplanen och plattan blev spikrak. Riktigt duktiga hantverkare som vi gärna anlitar igen!',
+                name: 'Fredrik & Malin Karlsson',
+                location: 'Örebro',
+                text: 'Vi anlitade Västergårds Bygg AB för en omfattande utbyggnad av vårt vardagsrum och bygge av nytt trädäck. Emil och hans team var otroligt lyhörda, höll tidsplanen perfekt och hantverket är i absolut toppklass. Rekommenderas varmt!',
                 stars: 5,
                 date: 'för 2 veckor sedan',
-                authorSub: 'Lokal guide • 14 omdömen',
+                authorSub: 'Lokal guide • 12 omdömen',
                 avatarUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=120&h=120'
               },
               {
-                name: 'Karin & Thomas Lind',
-                location: 'Edsbyn',
-                text: 'Vi tog hjälp av WSH Bygg för ett komplett takbyte och utbyggnad av vår veranda. Tydlig offert utan dolda kostnader, snyggt städat efter varje arbetsdag och ett fantastiskt slutresultat. Känns så tryggt att anlita lokala förmågor!',
+                name: 'Johan Bergström',
+                location: 'Kumla',
+                text: 'Tog hjälp av Emil för stomresning och takbyte på vår villa. Rak och ärlig kommunikation från första mötet, tydlig offert utan överraskningar och ett fantastiskt slutresultat. Riktigt proffsiga snickare!',
                 stars: 5,
                 date: 'för en månad sedan',
-                authorSub: '7 omdömen',
-                avatarUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=120&h=120'
+                authorSub: '8 omdömen',
+                avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120&h=120'
               },
               {
-                name: 'Stefan Wikström',
-                location: 'Bollnäs',
-                text: 'WSH Bygg utförde en omfattande renovering av golvbjälklag samt ny fasadpanel på vårt äldre trähus. Mycket noggranna med detaljerna och bra dialog genom hela projektet. Rekommenderas varmt till alla i Hälsingland!',
+                name: 'Camilla & Andreas Nilsson',
+                location: 'Hallsberg',
+                text: 'Västergårds Bygg AB hjälpte oss att förverkliga vårt drömuterum samt renovera köket. Emil kom med fantastiska idéer på smarta lösningar och utförandet var klockrent in i minsta detalj. Supernöjda!',
                 stars: 5,
                 date: 'för 2 månader sedan',
-                authorSub: 'Lokal guide • 19 omdömen',
-                avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120&h=120'
+                authorSub: 'Lokal guide • 16 omdömen',
+                avatarUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=120&h=120'
               },
             ].map((review, i) => {
               const delay = i * 150;

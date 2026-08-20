@@ -13,33 +13,33 @@ interface ReferenceItem {
 const references: ReferenceItem[] = [
   {
     id: '1',
-    image: '/gallery-wsh-5.webp',
-    alt: 'WSH Bygg nybyggt attefallshus och träbyggnad',
+    image: '/gallery-vb-1.webp',
+    alt: 'Västergårds Bygg AB nybyggnation och träkonstruktion',
   },
   {
     id: '2',
-    image: '/gallery-wsh-3.webp',
-    alt: 'WSH Bygg altan och källarentré i Hälsingland',
+    image: '/gallery-vb-2.webp',
+    alt: 'Västergårds Bygg AB om- och tillbyggnad',
   },
   {
     id: '3',
-    image: '/gallery-wsh-1.webp',
-    alt: 'WSH Bygg renovering av golvbjälklag och isolering',
+    image: '/gallery-vb-3.webp',
+    alt: 'Västergårds Bygg AB stomresning och fasad',
   },
   {
     id: '4',
-    image: '/gallery-wsh-4.webp',
-    alt: 'WSH Bygg armering och formsättning för betonggjutning',
+    image: '/gallery-vb-4.webp',
+    alt: 'Västergårds Bygg AB altanbygge och trädäck',
   },
   {
     id: '5',
-    image: '/gallery-wsh-2.webp',
-    alt: 'WSH Bygg grundarbete och förberedelse för husgrund',
+    image: '/gallery-vb-5.webp',
+    alt: 'Västergårds Bygg AB tak- och fasadarbeten',
   },
   {
     id: '6',
-    image: '/service-smahusbyggnation.webp',
-    alt: 'WSH Bygg nybyggnation och trähus',
+    image: '/gallery-vb-6.webp',
+    alt: 'Västergårds Bygg AB inredningssnickeri och finish',
   },
 ];
 

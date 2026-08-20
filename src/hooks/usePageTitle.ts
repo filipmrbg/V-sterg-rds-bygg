@@ -9,7 +9,7 @@ export function usePageTitle(title: string, description?: string) {
     document.title = title;
 
     // 2. Update Description
-    const defaultDesc = "WSH Bygg i Alfta utför nybyggnation, renovering, tillbyggnad, gjutning, grundarbete och takbyten i Ovanåkers kommun, Edsbyn, Bollnäs och hela Hälsingland. Kontakta oss för fri offert!";
+    const defaultDesc = "Västergårds Bygg AB – din snickare och byggentreprenör i Örebro län. Vi utför nybyggnation, renovering, tillbyggnad och totalentreprenad. Kontakta Emil Bäckström för fri offert!";
     const activeDesc = description || defaultDesc;
     
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -37,7 +37,7 @@ export function usePageTitle(title: string, description?: string) {
     if (twitterDescription) twitterDescription.setAttribute('content', activeDesc);
 
     // 5. Update Canonical Link
-    const absoluteUrl = `https://wshbygg.se${pathname === '/' ? '' : pathname}`;
+    const absoluteUrl = `https://vastergardsbygg.se${pathname === '/' ? '' : pathname}`;
     let canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) {
       canonical.setAttribute('href', absoluteUrl);
@@ -54,4 +54,3 @@ export function usePageTitle(title: string, description?: string) {
 
   }, [title, description, pathname]);
 }
-
